@@ -1,0 +1,40 @@
+.link {
+  position: relative;
+
+  &.primary {
+    font-weight: 700;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background: var(--color-accent);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      width: 0%;
+      background: var(--color-text);
+
+      transition: 0.5s;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &.secondary {
+  }
+}

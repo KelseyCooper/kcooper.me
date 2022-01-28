@@ -1,0 +1,25 @@
+.container {
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: var(--spacing-medium);
+
+  @media (--not-small) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.item {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.itemLink {
+  display: block;
+}
+
+.itemImage {
+  display: block;
+}

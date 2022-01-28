@@ -1,0 +1,23 @@
+.section {
+  max-width: var(--max-width-page-inner);
+  padding-top: var(--spacing-medium);
+  padding-bottom: var(--spacing-medium);
+  margin: 0 auto;
+
+  @media (--not-small) {
+    padding-top: var(--spacing-large);
+    padding-bottom: var(--spacing-large);
+  }
+
+  &.section--full-width {
+    max-width: unset;
+    padding: 0;
+    margin-left: calc(var(--spacing-medium) * -1);
+    margin-right: calc(var(--spacing-medium) * -1);
+
+    @media (--not-small) {
+      margin-left: calc(var(--spacing-large) * -1);
+      margin-right: calc(var(--spacing-large) * -1);
+    }
+  }
+}

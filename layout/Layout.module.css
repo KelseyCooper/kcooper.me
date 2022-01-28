@@ -1,0 +1,13 @@
+.container {
+  margin: 0 auto;
+}
+
+.inner {
+  padding-right: var(--spacing-medium);
+  padding-left: var(--spacing-medium);
+
+  @media (--not-small) {
+    padding-right: var(--spacing-large);
+    padding-left: var(--spacing-large);
+  }
+}

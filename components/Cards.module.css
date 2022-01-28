@@ -1,0 +1,25 @@
+.container {
+  display: grid;
+  grid-gap: var(--spacing-medium);
+
+  @media (--medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (--large) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  padding: var(--spacing-medium);
+  text-align: center;
+  background-color: var(--color-muted);
+}
+
+.icon {
+  display: inline-block;
+  padding: var(--spacing-small);
+  margin-bottom: var(--spacing-small);
+  background-color: var(--color-accent);
+}

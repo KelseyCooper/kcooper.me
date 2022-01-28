@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.colorBlock {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 3);
+  padding-top: calc(100% / 3);
+
+  & span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.primary {
+  background-color: var(--color-primary);
+}
+
+.secondary {
+  background-color: var(--color-secondary);
+}
+
+.background {
+  background-color: var(--color-background);
+}
+
+.muted {
+  background-color: var(--color-muted);
+}
+
+.accent {
+  background-color: var(--color-accent);
+}
+
+.highlight {
+  background-color: var(--color-highlight);
+}

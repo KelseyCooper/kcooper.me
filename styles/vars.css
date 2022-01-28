@@ -1,0 +1,40 @@
+@custom-media --small (max-width: 38em);
+@custom-media --not-small (min-width: 38em);
+@custom-media --medium (min-width: 38em) and (max-width: 60em);
+@custom-media --large (min-width: 60em);
+@custom-media --not-large (max-width: 60em);
+
+:root {
+  --font-size-body: 16px;
+  --font-size-body-small: 14px;
+
+  --font-family-body: "Roboto", sans-serif;
+  --font-family-heading: "Raleway", sans-serif;
+
+  --color-text: #331f1b;
+  --color-background: #faf8f8;
+  --color-primary: #e63c19;
+  --color-secondary: #cc4c33;
+  --color-muted: #f3eeed;
+  --color-accent: #d47f1e;
+  --color-highlight: #d8cb0f;
+
+  --spacing-unit: 4px;
+
+  --spacing-none: 0px;
+  --spacing-extra-small: calc(var(--spacing-unit) * 2);
+  --spacing-small: calc(var(--spacing-unit) * 3);
+  --spacing-medium: calc(var(--spacing-unit) * 5);
+  --spacing-large: calc(var(--spacing-unit) * 10);
+  --spacing-extra-large: calc(var(--spacing-unit) * 12);
+  --spacing-extra-extra-large: calc(var(--spacing-unit) * 20);
+
+  --header-height: 100px;
+
+  --z-index-mobile-menu: 500;
+
+  --easing: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+
+  --max-width-page: 900px;
+  --max-width-page-inner: 780px;
+}

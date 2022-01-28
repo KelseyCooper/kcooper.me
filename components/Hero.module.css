@@ -1,0 +1,30 @@
+.container {
+  position: relative;
+  min-height: calc(100vh - var(--header-height));
+  height: 100%;
+  color: var(--color-accent);
+
+  & img {
+    object-fit: cover;
+  }
+}
+
+.inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-medium);
+  text-align: center;
+
+  @media (--not-small) {
+    padding: var(--spacing-large);
+  }
+}
+
+.heading {
+  margin: 0 auto;
+}

@@ -1,0 +1,20 @@
+.container {
+  @media (--large) {
+    display: flex;
+  }
+}
+
+.heading {
+  margin-right: var(--spacing-large);
+  &.right {
+    order: 2;
+    margin-right: 0;
+    margin-left: var(--spacing-large);
+  }
+}
+
+.content {
+  & p {
+    margin-top: 0;
+  }
+}

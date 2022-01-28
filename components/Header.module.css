@@ -1,0 +1,30 @@
+.container {
+  padding: var(--spacing-medium);
+  background-color: powderblue;
+  height: 100px;
+}
+
+.inner {
+  max-width: var(--max-width-page);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.logo {
+  background-color: thistle;
+}
+
+.links {
+  display: flex;
+  padding-left: 0;
+  list-style-type: none;
+
+  @media (--small) {
+    display: none;
+  }
+
+  & li {
+    margin-left: var(--spacing-small);
+  }
+}
