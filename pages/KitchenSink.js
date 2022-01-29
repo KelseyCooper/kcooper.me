@@ -1,6 +1,8 @@
 import Image from "next/image";
 import cx from "classnames";
 
+import ImageBlurData from "common/utils/ImageBlurData";
+
 import styles from "./KitchenSink.module.css";
 
 const KitchenSink = () => (
@@ -231,6 +233,8 @@ const KitchenSink = () => (
         <Image
           src="https://www.fillmurray.com/505/314"
           layout="responsive"
+          placeholder="blur"
+          blurDataURL={ImageBlurData}
           width={505}
           height={314}
           alt="Junk"

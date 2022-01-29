@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Hero, Cards, Text } from "@/components";
+import { Hero, Cards, Text } from "common/components";
 
 const textContent = [
   {

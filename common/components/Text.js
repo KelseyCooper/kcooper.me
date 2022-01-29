@@ -3,7 +3,7 @@ import cx from "classnames";
 
 import styles from "./Text.module.css";
 
-import { TextLink } from "@/components";
+import { TextLink } from "common/components";
 
 const Text = ({ heading, headingAlignment = "left", content, path, label }) => {
   return (

@@ -3,7 +3,7 @@ import cx from "classnames";
 
 import styles from "./Cards.module.css";
 
-import { TextLink } from "@/components";
+import { TextLink } from "common/components";
 
 const cardsContent = [
   {

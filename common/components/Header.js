@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import cx from "classnames";
 
-import { MobileNav } from "@/components";
+import { MobileNav } from "common/components";
 
 import styles from "./Header.module.css";
 

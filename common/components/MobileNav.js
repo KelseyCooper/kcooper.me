@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 import cx from "classnames";
 
-import { Close } from "@/icons";
+import { Close } from "common/components/icons";
 import styles from "./MobileNav.module.css";
 
 const links = [
