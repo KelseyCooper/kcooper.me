@@ -2,6 +2,15 @@ form {
   margin: 0;
 }
 
+label {
+  display: block;
+  margin-bottom: var(--spacing-small);
+}
+
+input + label {
+  margin-top: var(--spacing-small);
+}
+
 input,
 textarea,
 select {
@@ -13,6 +22,7 @@ select {
   color: inherit;
   -webkit-appearance: none;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  padding: var(--spacing-small) var(--spacing-medium);
 
   &:hover,
   &:focus {

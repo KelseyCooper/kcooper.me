@@ -32,6 +32,10 @@ h6 {
   margin: 0;
 }
 
+figure {
+  position: relative;
+}
+
 img {
   width: 100%;
   height: auto;

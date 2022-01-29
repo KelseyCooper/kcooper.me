@@ -1,4 +1,5 @@
 import Image from "next/image";
+import useNextBlurhash from "use-next-blurhash";
 import cx from "classnames";
 
 import { Overlay } from "@/components";
@@ -11,13 +12,17 @@ const heroContent = {
 };
 
 const Hero = () => {
+  const [blurDataUrl] = useNextBlurhash("LEHV6nWB2yk8pyo0adR*.7kCMdnj");
+
   return (
     <section className="section section--full-width">
       <div className={cx(styles.container)}>
         <Image
           src="https://www.fillmurray.com/2100/1800"
           layout="fill"
-          alt="Logo"
+          placeholder="blur"
+          blurDataURL={blurDataUrl}
+          alt="Hero"
         />
         <Overlay opacity={0.65} />
 

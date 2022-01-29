@@ -1,3 +1,4 @@
+import Image from "next/image";
 import cx from "classnames";
 
 import styles from "./KitchenSink.module.css";
@@ -79,7 +80,7 @@ const KitchenSink = () => (
           Even more specifically, there is a tag just htmlFor{" "}
           <var>variables</var>. Not to be mistaken with blockquotes below, the
           quote tag lets you denote something as <q>quoted text</q>. Lastly
-          don't forget the sub (H<sub>2</sub>O) and sup (E = MC<sup>2</sup>)
+          don&apos;t forget the sub (H<sub>2</sub>O) and sup (E = MC<sup>2</sup>)
           tags.{" "}
         </p>
       </article>
@@ -227,7 +228,13 @@ const KitchenSink = () => (
     <hr />
     <section className="section">
       <figure>
-        <img src="https://www.fillmurray.com/505/314" />
+        <Image
+          src="https://www.fillmurray.com/505/314"
+          layout="responsive"
+          width={505}
+          height={314}
+          alt="Junk"
+        />
         <figcaption>
           Fig1. A picture of Bill Murray from{" "}
           <a href="https://www.fillmurray.com/">fillmurray.com</a>
@@ -334,7 +341,7 @@ const KitchenSink = () => (
                 checked
                 readOnly
               />{" "}
-              Option one is this and that&mdash;be sure to include why it's
+              Option one is this and that&mdash;be sure to include why it&apos;s
               great
             </label>
           </div>

@@ -23,9 +23,9 @@ const Footer = () => (
             height={150}
           />
           <p>
-            I'm baby banjo kale chips small batch locavore migas raclette paleo
+            I&apos;m baby banjo kale chips small batch locavore migas raclette paleo
             schlitz literally vaporware live-edge vice mlkshk. Blue bottle you
-            probably haven't heard of them sriracha vaporware raclette. Trust
+            probably haven&apos;t heard of them sriracha vaporware raclette. Trust
             fund health goth retro, green juice viral palo santo godard brunch
             vape.
           </p>
