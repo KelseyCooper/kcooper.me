@@ -31,10 +31,11 @@
 
   --header-height: 100px;
 
+  --z-index-header: 400;
   --z-index-mobile-menu: 500;
 
   --easing: cubic-bezier(0.895, 0.03, 0.685, 0.22);
 
-  --max-width-page: 900px;
+  --max-width-page: 1000px;
   --max-width-page-inner: 780px;
 }

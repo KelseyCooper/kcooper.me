@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Hero, Cards, Text } from "common/components";
+import { Introduction, Cards, Text } from "common/components";
 
 const textContent = [
   {
@@ -25,7 +25,7 @@ export default function Home() {
         <title>Felucca</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hero />
+      <Introduction />
       <Text heading={textContent[0].heading} content={textContent[0].content} />
       <Cards />
       <Text

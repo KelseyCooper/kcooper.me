@@ -1,7 +1,14 @@
 .container {
+  z-index: var(--z-index-header);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   padding: var(--spacing-medium);
-  background-color: powderblue;
-  height: 100px;
+
+  &.visible {
+    background-color: powderblue;
+  }
 }
 
 .inner {
@@ -12,12 +19,14 @@
 }
 
 .logo {
-  background-color: thistle;
+  display: flex;
 }
 
 .links {
   display: flex;
+  flex-direction: column;
   padding-left: 0;
+  margin-top: 0;
   list-style-type: none;
 
   @media (--small) {
