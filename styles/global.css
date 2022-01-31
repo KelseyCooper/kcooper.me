@@ -1,10 +1,14 @@
-@import "fonts.css";
-@import "typography.css";
-@import "containers.css";
-@import "forms.css";
+@import 'fonts.css';
+@import 'typography.css';
+@import 'containers.css';
+@import 'forms.css';
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
