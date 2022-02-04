@@ -1,6 +1,12 @@
 import Head from 'next/head'
 
-import { RotatingText, Introduction, Text, Header } from 'common/components'
+import {
+  RotatingText,
+  Introduction,
+  Text,
+  Header,
+  TextMask,
+} from 'common/components'
 import React, { useState } from 'react'
 
 const textContent = [
@@ -38,6 +44,7 @@ export default function Home() {
         id="Text"
         setInViewSection={setInViewSection}
       />
+      <TextMask />
       <Text
         id="Banana"
         heading={textContent[1].heading}

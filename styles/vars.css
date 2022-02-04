@@ -36,6 +36,6 @@
 
   --easing: cubic-bezier(0.895, 0.03, 0.685, 0.22);
 
-  --max-width-page: 1000px;
-  --max-width-page-inner: 780px;
+  --max-width-page: 1100px;
+  --max-width-page-inner: 820px;
 }
