@@ -8,9 +8,9 @@ import styles from './RotatingText.module.css'
 
 const headingArray = ['Developer', 'Creative', 'Maker']
 
-const RotatingText = ({ id, setInViewSection }) => {
+const RotatingText = () => {
   return (
-    <Section id={id} setInViewSection={setInViewSection}>
+    <Section>
       <div className={cx(styles.container)}>
         <RotatingContent />
       </div>

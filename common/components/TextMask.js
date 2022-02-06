@@ -14,9 +14,9 @@ const content = [
   'Victoria, Canada.',
 ]
 
-const TextMask = ({ id, setInViewSection }) => {
+const TextMask = () => {
   return (
-    <Section id={id} setInViewSection={setInViewSection}>
+    <Section>
       <div className={cx(styles.container, 'section')}>
         {content.map((text, i) => (
           <TextMaskItem text={text} key={`text-fill--${i}`} />

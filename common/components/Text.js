@@ -6,17 +6,9 @@ import { Section } from 'common/components'
 
 import styles from './Text.module.css'
 
-const Text = ({
-  heading,
-  headingAlignment = 'left',
-  content,
-  path,
-  label,
-  id,
-  setInViewSection,
-}) => {
+const Text = ({ heading, headingAlignment = 'left', content, path, label }) => {
   return (
-    <Section id={id} setInViewSection={setInViewSection}>
+    <Section>
       <div className="section">
         <div className={cx(styles.container)}>
           <h2 className={cx(styles.heading, styles[headingAlignment])}>

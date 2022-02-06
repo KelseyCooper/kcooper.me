@@ -18,7 +18,7 @@ const variants = {
   },
 }
 
-const Header = ({ inViewSection }) => {
+const Header = () => {
   const [headerVisible, setHeaderVisible] = useState(true)
   const [scrollY, setScrollY] = useState(0)
 

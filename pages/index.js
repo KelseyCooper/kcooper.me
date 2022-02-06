@@ -9,7 +9,6 @@ import {
   Slideshow,
   Contact,
 } from 'common/components'
-import React, { useState } from 'react'
 
 const textContent = [
   {
@@ -29,35 +28,26 @@ const textContent = [
 ]
 
 export default function Home() {
-  const [inViewSection, setInViewSection] = useState('')
-
   return (
     <div>
       <Head>
-        <title>Felucca</title>
+        <title></title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header inViewSection={inViewSection} />
-      <RotatingText id="Home" setInViewSection={setInViewSection} />
+      <Header />
+      <RotatingText />
       <TextMask />
-      <Introduction id="About" setInViewSection={setInViewSection} />
-      <Slideshow id="Work" setInViewSection={setInViewSection} />
+      <Introduction />
+      <Slideshow />
+      <Text heading={textContent[0].heading} content={textContent[0].content} />
       <Text
-        heading={textContent[0].heading}
-        content={textContent[0].content}
-        id="Text"
-        setInViewSection={setInViewSection}
-      />
-      <Text
-        id="Banana"
         heading={textContent[1].heading}
         headingAlignment={textContent[1].headingAlignment}
         content={textContent[1].content}
         path={textContent[1].path}
         label={textContent[1].label}
-        setInViewSection={setInViewSection}
       />
-      <Contact id="Contact" setInViewSection={setInViewSection} />
+      <Contact />
     </div>
   )
 }

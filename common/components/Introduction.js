@@ -6,9 +6,9 @@ import ImageBlurData from 'common/utils/ImageBlurData'
 
 import cx from 'classnames'
 
-const Introduction = ({ id, setInViewSection }) => {
+const Introduction = () => {
   return (
-    <Section id={id} setInViewSection={setInViewSection}>
+    <Section>
       <div className={cx(styles.container, 'section')}>
         <div className={cx(styles.image)}>
           <Image

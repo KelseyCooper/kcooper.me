@@ -32,9 +32,9 @@ const cardsContent = [
   },
 ]
 
-const Cards = ({ id, setInViewSection }) => {
+const Cards = () => {
   return (
-    <Section id={id} setInViewSection={setInViewSection}>
+    <Section>
       <div className={cx(styles.container, 'section')}>
         {cardsContent.map(card => (
           <div className={cx(styles.card)} key={card.title}>
