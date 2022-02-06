@@ -12,6 +12,7 @@
   --font-family-heading: 'Raleway', sans-serif;
 
   --color-text: #331f1b;
+  --color-text-light: #b9b5b5;
   --color-background: #faf8f8;
   --color-primary: #e63c19;
   --color-secondary: #cc4c33;
@@ -27,7 +28,7 @@
   --spacing-medium: calc(var(--spacing-unit) * 5);
   --spacing-large: calc(var(--spacing-unit) * 10);
   --spacing-extra-large: calc(var(--spacing-unit) * 12);
-  --spacing-extra-extra-large: calc(var(--spacing-unit) * 20);
+  --spacing-extra-extra-large: calc(var(--spacing-unit) * 40);
 
   --header-height: 100px;
 
@@ -36,6 +37,6 @@
 
   --easing: cubic-bezier(0.895, 0.03, 0.685, 0.22);
 
-  --max-width-page: 1100px;
-  --max-width-page-inner: 820px;
+  --max-width-page: 1300px;
+  --max-width-page-inner: 1200px;
 }

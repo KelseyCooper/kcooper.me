@@ -1,0 +1,42 @@
+.container {
+  width: 100%;
+
+  @media (--not-small) {
+    width: 50%;
+    margin-left: var(--spacing-large);
+  }
+}
+
+.heading {
+  margin-bottom: var(--spacing-large);
+}
+
+.form {
+  transition: height 0.9s ease, visibility 0.1s 0.2s linear;
+  overflow: hidden;
+
+  &.hidden {
+    height: 0;
+    visibility: hidden;
+    display: none;
+  }
+
+  & button {
+    margin-top: var(--spacing-large);
+  }
+}
+
+.splitContainer {
+  display: flex;
+  margin-bottom: var(--spacing-large);
+}
+
+.split {
+  width: 50%;
+  padding-right: var(--spacing-small);
+}
+
+.split + .split {
+  padding-right: 0;
+  padding-left: var(--spacing-small);
+}

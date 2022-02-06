@@ -6,6 +6,8 @@ import {
   Text,
   Header,
   TextMask,
+  Slideshow,
+  Contact,
 } from 'common/components'
 import React, { useState } from 'react'
 
@@ -37,14 +39,15 @@ export default function Home() {
       </Head>
       <Header inViewSection={inViewSection} />
       <RotatingText id="Home" setInViewSection={setInViewSection} />
+      <TextMask />
       <Introduction id="About" setInViewSection={setInViewSection} />
+      <Slideshow id="Work" setInViewSection={setInViewSection} />
       <Text
         heading={textContent[0].heading}
         content={textContent[0].content}
         id="Text"
         setInViewSection={setInViewSection}
       />
-      <TextMask />
       <Text
         id="Banana"
         heading={textContent[1].heading}
@@ -54,6 +57,7 @@ export default function Home() {
         label={textContent[1].label}
         setInViewSection={setInViewSection}
       />
+      <Contact id="Contact" setInViewSection={setInViewSection} />
     </div>
   )
 }

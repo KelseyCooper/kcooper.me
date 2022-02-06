@@ -4,7 +4,9 @@ form {
 
 label {
   display: block;
-  margin-bottom: var(--spacing-small);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-extra-small);
 }
 
 input + label {
@@ -14,6 +16,7 @@ input + label {
 input,
 textarea,
 select {
+  width: 100%;
   display: block;
   border-radius: 0;
   border: 1px solid #000;
@@ -22,42 +25,61 @@ select {
   color: inherit;
   -webkit-appearance: none;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  padding: var(--spacing-small) var(--spacing-medium);
+  padding: var(--spacing-small) 0;
+  color: var(--color-text);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body);
+  outline: 0;
 
   &:hover,
   &:focus {
     border-color: var(--color-text);
   }
+
+  &::placeholder {
+    color: var(--color-text-light);
+  }
+}
+
+textarea {
+  min-height: 200px;
+}
+
+input,
+textarea {
+  border-color: var(--color-text);
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
 }
 
 input {
-  /* clears the 'X' from Internet Explorer */
-  &[type="search"]::-ms-clear {
+  &[type='search']::-ms-clear {
     display: none;
     width: 0;
     height: 0;
   }
-  &[type="search"]::-ms-reveal {
+  &[type='search']::-ms-reveal {
     display: none;
     width: 0;
     height: 0;
   }
 
   /* clears the 'X' from Chrome */
-  &[type="search"]::-webkit-search-decoration,
-  &[type="search"]::-webkit-search-cancel-button,
-  &[type="search"]::-webkit-search-results-button,
-  &[type="search"]::-webkit-search-results-decoration {
+  &[type='search']::-webkit-search-decoration,
+  &[type='search']::-webkit-search-cancel-button,
+  &[type='search']::-webkit-search-results-button,
+  &[type='search']::-webkit-search-results-decoration {
     display: none;
   }
 
-  &[type="number"]::-webkit-outer-spin-button,
-  &[type="number"]::-webkit-inner-spin-button {
+  &[type='number']::-webkit-outer-spin-button,
+  &[type='number']::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
 
-  &[type="checkbox"] {
+  &[type='checkbox'] {
     position: relative;
     width: var(--spacing-medium);
     height: var(--spacing-medium);
@@ -67,7 +89,7 @@ input {
 
     &:checked {
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         right: 0;
@@ -80,13 +102,13 @@ input {
   }
 
   /* Clear spinner icons from firefox */
-  &[type="number"]::-webkit-outer-spin-button,
-  &[type="number"]::-webkit-inner-spin-button {
+  &[type='number']::-webkit-outer-spin-button,
+  &[type='number']::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
 
-  &[type="number"] {
+  &[type='number'] {
     -moz-appearance: textfield;
   }
 }

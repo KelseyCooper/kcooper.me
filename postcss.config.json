@@ -8,9 +8,10 @@
           "flexbox": "no-2009"
         },
         "stage": 0,
+        "importFrom": ["./styles/vars.css"],
         "features": {
           "custom-properties": false,
-          "custom-media": true
+          "media": true
         }
       }
     ]

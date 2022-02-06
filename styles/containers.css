@@ -1,12 +1,12 @@
 .section {
   max-width: var(--max-width-page-inner);
-  padding-top: var(--spacing-medium);
-  padding-bottom: var(--spacing-medium);
+  padding-top: var(--spacing-large);
+  padding-bottom: var(--spacing-large);
   margin: 0 auto;
 
   @media (--not-small) {
-    padding-top: var(--spacing-large);
-    padding-bottom: var(--spacing-large);
+    padding-top: var(--spacing-extra-extra-large);
+    padding-bottom: var(--spacing-extra-extra-large);
   }
 
   &.section--full-width {

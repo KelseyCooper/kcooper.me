@@ -1,14 +1,27 @@
-import PropTypes from "prop-types";
-import cx from "classnames";
+import PropTypes from 'prop-types'
+import cx from 'classnames'
 
-import styles from "./Button.module.css";
-function Button({ variant = "primary", children }) {
-  return <button className={cx(styles.container)}>{children}</button>;
+import styles from './Button.module.css'
+function Button({
+  variant = 'primary',
+  children,
+  disabled = false,
+  type = 'submit',
+}) {
+  return (
+    <button
+      disabled={disabled}
+      type={type}
+      className={cx(styles.button, styles[variant])}
+    >
+      {children}
+    </button>
+  )
 }
 
 Button.propTypes = {
   variant: PropTypes.string,
   children: PropTypes.node.isRequired,
-};
+}
 
-export default Button;
+export default Button

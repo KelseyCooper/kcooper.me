@@ -1,26 +1,16 @@
 .container {
-  background-color: powderblue;
-  height: 300px;
-
-  @media (--large) {
-    background-color: red;
-  }
-
-  @media (--not-small) {
-    background-color: red;
-  }
-
-  @media (--small) {
-    display: none;
-  }
+  display: flex;
+  align-items: center;
 }
 
-.inner {
-  padding-left: var(--spacing-small);
+.image {
+  position: relative;
+  width: 500px;
+  padding-top: 750px;
+  height: auto;
+  flex-shrink: 0;
+}
 
-  @media (--not-small) {
-    background-color: red;
-    padding-right: var(--spacing-large);
-    padding-left: var(--spacing-large);
-  }
+.text {
+  margin-left: var(--spacing-large);
 }

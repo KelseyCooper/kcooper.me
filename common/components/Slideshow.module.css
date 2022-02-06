@@ -1,0 +1,12 @@
+.container {
+  height: 100vh;
+  background-color: powderblue;
+
+  padding-right: var(--spacing-medium);
+  padding-left: var(--spacing-medium);
+
+  @media (--not-small) {
+    padding-right: var(--spacing-large);
+    padding-left: var(--spacing-large);
+  }
+}
