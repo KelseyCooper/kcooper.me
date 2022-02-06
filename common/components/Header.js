@@ -53,7 +53,9 @@ const Header = () => {
       variants={variants.header}
       transition={{ ease: 'anticipate', duration: 1 }}
     >
-      <header className={cx(styles.container, { visible: headerVisible })}>
+      <header
+        className={cx(styles.container, { [styles.hidden]: !headerVisible })}
+      >
         <div className={cx(styles.inner)}>
           <div className={cx(styles.logo)}>
             <Link href={'/'} passHref>

@@ -6,6 +6,10 @@
   right: 0;
   padding: var(--spacing-medium);
   background-color: var(--color-background);
+
+  &.hidden {
+    pointer-events: none;
+  }
 }
 
 .inner {
