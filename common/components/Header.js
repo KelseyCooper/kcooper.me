@@ -3,18 +3,9 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import cx from 'classnames'
 
-import themeColors from 'styles/themeColors'
+import { ColorThemeToggle } from 'common/components/'
 
 import styles from './Header.module.css'
-
-const links = [
-  { label: 'Home', path: '#Home' },
-  { label: 'About', path: '#About' },
-  { label: 'Text', path: '#Text' },
-  { label: 'Banana', path: '#Banana' },
-  { label: 'Kitchen Sink', path: '/KitchenSink' },
-  { label: 'Usefull links', path: '/UsefulLinks' },
-]
 
 const variants = {
   header: {
@@ -30,7 +21,6 @@ const variants = {
 const Header = ({ inViewSection }) => {
   const [headerVisible, setHeaderVisible] = useState(true)
   const [scrollY, setScrollY] = useState(0)
-  let themeColorIndex = 0
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, true)
@@ -55,27 +45,6 @@ const Header = ({ inViewSection }) => {
     }
   }
 
-  const handleClick = () => {
-    const themeColorsArray = Object.keys(themeColors)
-
-    themeColorIndex =
-      themeColorIndex < themeColorsArray.length - 1 ? (themeColorIndex += 1) : 0
-
-    const themeColorKey = themeColorsArray[themeColorIndex]
-    document.documentElement.style.setProperty(
-      '--color-text',
-      themeColors[themeColorKey].text
-    )
-    document.documentElement.style.setProperty(
-      '--color-text-light',
-      themeColors[themeColorKey].textLight
-    )
-    document.documentElement.style.setProperty(
-      '--color-background',
-      themeColors[themeColorKey].background
-    )
-  }
-
   return (
     <motion.header
       className={cx(styles.container)}
@@ -94,17 +63,7 @@ const Header = ({ inViewSection }) => {
               </div>
             </Link>
           </div>
-          <ul className={cx(styles.links)}>
-            <button onClick={handleClick}>color</button>
-            {links.map(link => (
-              <li key={link.label}>
-                {inViewSection === link.label ? <span>x</span> : ''}
-                <Link href={link.path}>
-                  <a>{link.label}</a>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <ColorThemeToggle />
         </div>
       </header>
     </motion.header>

@@ -5,12 +5,14 @@
   left: 0;
   right: 0;
   padding: var(--spacing-medium);
+  background-color: var(--color-background);
 }
 
 .inner {
   max-width: var(--max-width-page);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -28,21 +30,4 @@
   letter-spacing: -0.0065em;
   margin-left: -4px;
   font-family: var(--font-family-heading);
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
-  margin-top: 0;
-  list-style-type: none;
-  text-align: right;
-
-  @media (--small) {
-    display: none;
-  }
-
-  & li {
-    margin-left: var(--spacing-small);
-  }
 }

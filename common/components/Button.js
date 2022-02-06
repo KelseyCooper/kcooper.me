@@ -14,7 +14,7 @@ function Button({
       type={type}
       className={cx(styles.button, styles[variant])}
     >
-      {children}
+      <span>{children}</span>
     </button>
   )
 }

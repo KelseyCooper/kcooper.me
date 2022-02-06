@@ -1,7 +1,7 @@
 .container {
   padding: var(--spacing-extra-large) var(--spacing-medium);
   background-color: var(--color-text);
-  color: white;
+  color: var(--color-background);
 
   @media (--small) {
     padding: var(--spacing-medium);
@@ -27,7 +27,7 @@
 
 .heading {
   padding-bottom: var(--spacing-small);
-  border-bottom: 2px solid var(--color-accent);
+  border-bottom: 2px solid var(--color-background);
 }
 
 .links {
@@ -45,7 +45,7 @@
   padding-top: var(--spacing-large);
   margin: 0 auto;
   text-align: center;
-  border-top: 2px solid var(--color-accent);
+  border-top: 2px solid var(--color-background);
 
   & p:first-of-type {
     margin-top: 0;

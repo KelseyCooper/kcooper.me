@@ -22,7 +22,7 @@ const Close = () => {
         stroke="currentColor"
       />
     </svg>
-  );
-};
+  )
+}
 
-export { Close };
+export { Close }
