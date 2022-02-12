@@ -8,7 +8,7 @@ import styles from './ColorThemeToggle.module.css'
 
 const dotPosition = [
   {
-    left: '3px',
+    left: '2px',
   },
   {
     left: '16px',

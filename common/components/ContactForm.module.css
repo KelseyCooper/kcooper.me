@@ -9,6 +9,10 @@
 
 .heading {
   margin-bottom: var(--spacing-large);
+
+  @media (--not-small) {
+    margin-top: var(--spacing-small);
+  }
 }
 
 .form {
