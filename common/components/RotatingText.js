@@ -37,7 +37,7 @@ const RotatingContent = () => {
             key={`${headingArray[headingIterator]}--${char}--${i}`}
             animate={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: -35 }}
-            transition={{ delay: 0.1 * i, ease: 'easeIn', duration: 1 }}
+            transition={{ delay: 0.05 * i, ease: 'easeIn', duration: 0.5 }}
           >
             {char}
           </motion.span>

@@ -46,7 +46,7 @@ const ColorThemeToggle = () => {
     <button
       className={cx(styles.toggle)}
       onClick={handleClick}
-      ariaLabel="Toggle site colors"
+      aria-label="Toggle site colors"
     >
       <motion.div
         className={cx(styles.toggleDot)}

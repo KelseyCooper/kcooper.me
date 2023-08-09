@@ -1,7 +1,11 @@
 .container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: var(--spacing-extra-large) var(--spacing-medium);
-  background-color: var(--color-text);
-  color: var(--color-background);
+  color: var(--color-text);
+  color: var(--color-text);
 
   @media (--small) {
     padding: var(--spacing-medium);
@@ -14,44 +18,11 @@
 }
 
 .content {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: var(--spacing-large);
-  padding-bottom: var(--spacing-large);
+  display: flex;
+  justify-content: flex-end;
 
-  @media (--not-large) {
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-medium);
-  }
-}
-
-.heading {
-  padding-bottom: var(--spacing-small);
-  border-bottom: 2px solid var(--color-background);
-}
-
-.links {
-  padding-left: 0;
-  list-style-type: none;
-
-  & li {
-    margin-top: var(--spacing-small);
-    margin-left: 0;
-  }
-}
-
-.copyright {
-  width: 100%;
-  padding-top: var(--spacing-large);
-  margin: 0 auto;
-  text-align: center;
-  border-top: 2px solid var(--color-background);
-
-  & p:first-of-type {
-    margin-top: 0;
-  }
-
-  & p:last-of-type {
-    margin-bottom: 0;
+  & svg {
+    width: 35px;
+    height: 35px;
   }
 }
